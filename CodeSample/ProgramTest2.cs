@@ -6,7 +6,7 @@ using System.Threading;
 namespace BadPracticesDemo
 {
     // This code is implementing bad practices in purpose to demonstrate
-    public class ProgramTest
+    public class ProgramTest2
     {
         public static string CONNECTION_STRING = "Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;";
         
@@ -14,7 +14,7 @@ namespace BadPracticesDemo
         {
             Console.WriteLine("Starting application...");
             
-            var p = new ProgramTest();
+            var p = new ProgramTest2();
             var result = p.DoSomething(10);
             Console.WriteLine("Result: " + result);
             
@@ -41,7 +41,7 @@ namespace BadPracticesDemo
             Console.ReadKey();
         }
         
-        private int DoSomething(int a)
+        public int DoSomething(int a)
         {
             int x = 0;
             
@@ -86,8 +86,8 @@ namespace BadPracticesDemo
             
             return result;
         }
-
-        private void RiskyOperation()
+        
+        public void RiskyOperation()
         {
             var random = new Random();
             var number = random.Next(0, 10);
@@ -110,17 +110,6 @@ namespace BadPracticesDemo
                 return true;
         }
     }
-
+    
     // Poor class structure - multiple classes in one file
-    public class User
-    {
-        public string Name;
-        public string Email;
-        public int Age;
-        
-        public void DisplayInfo()
-        {
-            Console.WriteLine("User: " + Name + ", Email: " + Email + ", Age: " + Age);
-        }
-    }
 }

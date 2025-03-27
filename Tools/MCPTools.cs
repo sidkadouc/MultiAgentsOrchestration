@@ -43,7 +43,7 @@ namespace MultiAgentsOrchestration.Console.Tools
         {
             McpClientOptions options = new()
             {
-                ClientInfo = new() { Name = "GitHub", Version = "1.0.0" }
+                ClientInfo = new() { Name = "filesystem", Version = "1.0.0" }
             };
 
             var config = new McpServerConfig
@@ -54,7 +54,7 @@ namespace MultiAgentsOrchestration.Console.Tools
                 TransportOptions = new Dictionary<string, string>
                 {
                     ["command"] = "npx",
-                    ["arguments"] = "-y @modelcontextprotocol/server-filesystem C:\\dev\\Multi-Agents\\MultiAgentsOrchestration.Console\\CodeSample",
+                    ["arguments"] = "-y @modelcontextprotocol/server-filesystem C:\\dev\\Multi-Agents\\MultiAgentsOrchestration.Console\\MultiAgentsOrchestration\\CodeSample",
                 }
             };
 

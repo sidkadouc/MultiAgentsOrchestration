@@ -26,7 +26,7 @@ namespace MultiAgentsOrchestration.Console
         - codereviewer
         - approver
 
-           Always follow these rules when selecting the next participant:
+        Always follow these rules when selecting the next participant:
         - After filesreader, it is codereviewer's turn.
         - After codereviewer, it is approver's turn.
         - After approver's, it is codereviewer's turn or filesreader's turn depending on the demand
