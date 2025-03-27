@@ -53,8 +53,6 @@ namespace MultiAgentsOrchestration.Agents
             }
 
            return sb.ToString();
-   
-
         }
     }
 

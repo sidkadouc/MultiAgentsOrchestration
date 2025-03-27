@@ -27,6 +27,5 @@
 		<PackageReference Include="Microsoft.SemanticKernel.Agents.OpenAI" Version="1.41.0-preview" />
 		<PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.0.1-preview.1.24570.5" />
 		<PackageReference Include="ModelContextProtocol" Version="0.1.0-preview.1.25171.12" />
-		<PackageReference Include="SkiaSharp" Version="2.88.3" />
 	</ItemGroup>
 </Project>

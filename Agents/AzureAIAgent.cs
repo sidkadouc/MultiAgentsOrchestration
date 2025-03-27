@@ -15,10 +15,6 @@ public class AzureAIAgent
 
 
 
-
-
-
-
     public AzureAIAgent(Kernel kernel, string connectionString, string? agentId = null)
     {
 

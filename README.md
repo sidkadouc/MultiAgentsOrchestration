@@ -13,7 +13,7 @@ The application implements a multi-agent system for code review that consists of
 
 ### Prerequisites
 - .NET 9.0 SDK
-- Azure OpenAI account with access to GPT models (here only gpt-4o-mini is used)
+- Azure AI Foundry with access to models (here only gpt-4o-mini is used)
 - Visual Studio 2022 or VS Code with C# extension
 
 ### Configuration

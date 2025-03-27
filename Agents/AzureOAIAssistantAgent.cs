@@ -30,25 +30,7 @@ public class AzureOAIAssistantAgent
     public Microsoft.SemanticKernel.Agents.AzureAI.AzureAIAgent Agent => this._agent;
 #pragma warning restore SKEXP0110 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
 
-    //// Local function to invoke agent and display the conversation messages.
-    //public async Task InvokeAgentAsync(string input)
-    //{
-    //    AgentThread thread = await _agentsClient.CreateThreadAsync();
-    //    try
-    //    {
-    //        ChatMessageContent message = new(AuthorRole.User, input);
-    //        await _agent.AddChatMessageAsync(thread.Id, message);
-    //        await foreach (ChatMessageContent response in _agent.InvokeAsync(thread.Id))
-    //        {
-    //            Console.WriteLine(response.Content);
-    //        }
-    //    }
-    //    finally
-    //    {
-    //        await _agentsClient.DeleteThreadAsync(thread.Id);
-    //        //await this._agentsClient.DeleteAgentAsync(agent.Id);
-    //    }
-    //}
+
 
 }
     

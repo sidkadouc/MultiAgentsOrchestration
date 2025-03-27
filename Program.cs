@@ -22,7 +22,6 @@ var azureOpenAIEndpoint = configuration.GetValue<string>("AzureOpenAI:Url");
 kernelBuilder.AddAzureOpenAIChatCompletion("gpt-4o-mini", azureOpenAIEndpoint, new DefaultAzureCredential());
 
 
-
 var tools = await (await MCPTools.GetFileSystemToolsAsync()).GetAIFunctionsAsync();
 
 
